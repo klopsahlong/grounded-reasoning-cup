@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grounded Reasoning Cup 🏆 — Call for Student Teams</title>
+  <style>
+    :root {
+      --primary: #1b3a4b;
+      --accent: #ff3621;
+      --bg: #f8f9fa;
+      --card-bg: #ffffff;
+      --text: #2d2d2d;
+      --muted: #6c757d;
+      --border: #e0e0e0;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      color: var(--text);
+      background: var(--bg);
+      line-height: 1.7;
+    }
+
+    .hero {
+      background: linear-gradient(135deg, var(--primary) 0%, #2a5a6e 100%);
+      color: #fff;
+      padding: 4rem 2rem 3rem;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 2.6rem;
+      margin-bottom: 0.5rem;
+      font-weight: 800;
+    }
+
+    .hero p {
+      font-size: 1.15rem;
+      opacity: 0.9;
+      max-width: 700px;
+      margin: 0.5rem auto 0;
+    }
+
+    .container {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 2rem 1.5rem 4rem;
+    }
+
+    h2 {
+      font-size: 1.6rem;
+      margin: 2.5rem 0 1rem;
+      color: var(--primary);
+      border-bottom: 2px solid var(--accent);
+      padding-bottom: 0.3rem;
+    }
+
+    h3 {
+      font-size: 1.2rem;
+      margin: 1.5rem 0 0.5rem;
+      color: var(--primary);
+    }
+
+    p, li {
+      font-size: 1.05rem;
+      margin-bottom: 0.6rem;
+    }
+
+    ul, ol {
+      padding-left: 1.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 1.5rem 2rem;
+      margin: 1.5rem 0;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    }
+
+    .highlight-card {
+      border-left: 4px solid var(--accent);
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1rem 0;
+      font-size: 1rem;
+    }
+
+    th, td {
+      text-align: left;
+      padding: 0.75rem 1rem;
+      border-bottom: 1px solid var(--border);
+    }
+
+    th {
+      background: var(--primary);
+      color: #fff;
+      font-weight: 600;
+    }
+
+    tr:nth-child(even) { background: #f4f6f8; }
+
+    .prizes {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1rem;
+      margin: 1rem 0;
+    }
+
+    .prize-card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 1.5rem;
+      text-align: center;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    }
+
+    .prize-card.gold { border-top: 4px solid #ffd700; }
+    .prize-card.silver { border-top: 4px solid #c0c0c0; }
+    .prize-card.bronze { border-top: 4px solid #cd7f32; }
+
+    .prize-card .place {
+      font-size: 1.4rem;
+      font-weight: 700;
+      margin-bottom: 0.3rem;
+    }
+
+    .prize-card .amount {
+      font-size: 1.1rem;
+      color: var(--accent);
+      font-weight: 600;
+    }
+
+    .cta {
+      display: inline-block;
+      background: var(--accent);
+      color: #fff;
+      padding: 0.8rem 2rem;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1.1rem;
+      margin-top: 1rem;
+      transition: opacity 0.2s;
+    }
+
+    .cta:hover { opacity: 0.85; }
+
+    .key-details {
+      font-size: 1.05rem;
+    }
+
+    .key-details strong {
+      color: var(--primary);
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 600px) {
+      .hero h1 { font-size: 1.8rem; }
+      .container { padding: 1.5rem 1rem 3rem; }
+      .prizes { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+  <header class="hero">
+    <h1>Grounded Reasoning Cup &#127942;</h1>
+    <p>Call for Student Teams</p>
+    <p style="margin-top:0.8rem; font-size:1rem; opacity:0.8;">
+      Databricks &middot; Data + AI Summit 2026 &middot; San Francisco
+    </p>
+  </header>
+
+  <main class="container">
+
+    <p>
+      Databricks is hosting a live competition at the <strong>Data + AI Summit 2026</strong>, where student teams will build AI agents for enterprise reasoning tasks. We invite teams to apply below&mdash;full details on the competition and prizes are included.
+    </p>
+
+    <h2>Overview</h2>
+    <p>
+      The Grounded Reasoning Cup is a live competition bringing together leading AI labs and top academic teams to tackle real-world enterprise challenges using AI agents.
+    </p>
+    <p>
+      The competition is built around <strong>OfficeQA</strong>, a benchmark developed by Databricks that evaluates how well AI systems can retrieve and reason over large collections of real-world unstructured documents in enterprise settings. Teams will have 2 months prior to the competition to build out their solutions, and will apply their agents to a new, unseen test set in the competition&mdash;testing how well solutions generalize.
+    </p>
+    <p>This is a unique opportunity to:</p>
+    <ul>
+      <li>Tackle high-impact, real-world enterprise problems with AI</li>
+      <li>Showcase your work in front of top researchers, engineers, and industry leaders</li>
+      <li>Compete for recognition&mdash;and <strong>$100k in model credit prizes</strong>&mdash;at one of the largest data &amp; AI conferences</li>
+    </ul>
+    <p>Good luck, and we look forward to seeing your applications!</p>
+
+    <h2>Application</h2>
+
+    <div class="card highlight-card">
+      <p class="key-details"><strong>Deadline:</strong> April 3rd, 11:59 PM PT</p>
+      <a class="cta" href="#">Apply Now &rarr;</a>
+      <p style="margin-top:0.5rem; font-size:0.9rem; color:var(--muted);">(Application link coming soon)</p>
+    </div>
+
+    <h3>Who Should Apply</h3>
+    <p>
+      We are looking for teams of <strong>2&ndash;4 members</strong> to compete and attend in person. All team members must be from the same university. The development team may be larger (e.g., an entire academic lab), but the team must choose 2&ndash;4 representatives to attend in person. A <strong>travel stipend</strong> will be provided for representing team members.
+    </p>
+    <p>
+      We expect many teams to include PhD students, but we also encourage undergraduate and master&rsquo;s students with strong research experience to apply.
+    </p>
+
+    <h3>Application Details</h3>
+    <p>Teams should submit:</p>
+    <ul>
+      <li>Background information for each team member (CV, GitHub, etc.)</li>
+      <li>A statement of interest (max 1000 words) outlining:
+        <ul>
+          <li>Your team&rsquo;s background and experience</li>
+          <li>What makes your team a strong competitor</li>
+          <li>Why you&rsquo;re interested in participating</li>
+        </ul>
+      </li>
+    </ul>
+
+    <h2>Competition Format &amp; Rules</h2>
+
+    <h3>Development Period</h3>
+    <p>
+      The main development period is <strong>April 15 &ndash; June 15</strong>. During this time, you will develop and refine your approach with the existing OfficeQA benchmark serving as a development set.
+    </p>
+
+    <h3>Live Competition</h3>
+    <p>
+      At the live event, teams will be evaluated on a previously unseen benchmark built from data similar to the U.S. Treasury Bulletins (the original corpus used for OfficeQA).
+    </p>
+
+    <div class="card">
+      <table>
+        <tr><th>Detail</th><th>Information</th></tr>
+        <tr><td><strong>Date</strong></td><td>June 17, 2026</td></tr>
+        <tr><td><strong>Time</strong></td><td>1:00 &ndash; 4:00 PM</td></tr>
+        <tr><td><strong>Location</strong></td><td>Moscone Center West, San Francisco</td></tr>
+      </table>
+    </div>
+
+    <h3>Competition Flow</h3>
+    <p>The competition consists of <strong>6 rounds</strong> over approximately two hours.</p>
+    <ul>
+      <li><strong>Rounds:</strong> In each round, 10 new questions from the benchmark are released simultaneously to all teams. Teams have 15 minutes to submit answers to all 10 questions.</li>
+      <li><strong>Systems:</strong> You may use AI agents, automated pipelines, or human-in-the-loop review.</li>
+      <li><strong>Re-Submissions:</strong> Each team has 3 re-submit opportunities throughout the competition to resubmit an answer in the current round.</li>
+    </ul>
+
+    <h3>Scoring</h3>
+    <ul>
+      <li><strong>Correct Answer:</strong> Each correct answer earns 1 point.</li>
+      <li><strong>Speed Bonus:</strong> The first team to correctly answer a given question receives a +0.25 pt speed bonus.</li>
+      <li><strong>Final Ranking:</strong> Determined by total points accumulated.</li>
+    </ul>
+
+    <h2>Prizes</h2>
+    <p>The top three academic teams will receive awards on stage at DAIS, as well as <strong>$100k worth of Databricks credits</strong>:</p>
+
+    <div class="prizes">
+      <div class="prize-card gold">
+        <div class="place">&#129351; 1st Place</div>
+        <div class="amount">60k credits</div>
+      </div>
+      <div class="prize-card silver">
+        <div class="place">&#129352; 2nd Place</div>
+        <div class="amount">30k credits</div>
+      </div>
+      <div class="prize-card bronze">
+        <div class="place">&#129353; 3rd Place</div>
+        <div class="amount">10k credits</div>
+      </div>
+    </div>
+    <p style="color:var(--muted); font-size:0.95rem;">
+      Credits can be used to serve models from OpenAI, Anthropic, Google, and more.
+    </p>
+
+    <h2>Timeline Summary</h2>
+    <div class="card">
+      <table>
+        <tr><th>Phase</th><th>Dates</th></tr>
+        <tr><td>Team applications open</td><td>Mar 23 &ndash; Apr 3</td></tr>
+        <tr><td>Application review &amp; selection</td><td>Apr 3 &ndash; Apr 13</td></tr>
+        <tr><td>Development period</td><td>Apr 15 &ndash; Jun 15</td></tr>
+        <tr><td>Competition</td><td>Jun 17 (1&ndash;4 PM)</td></tr>
+      </table>
+    </div>
+
+  </main>
+
+  <footer>
+    &copy; 2026 Grounded Reasoning Cup
+  </footer>
+
+</body>
+</html>
